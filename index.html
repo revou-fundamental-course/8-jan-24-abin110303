@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematika</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kalkulator Matematika</h1>
+    </header>
+
+    <div class="container">
+        <div>
+            <h2>Welcome To Katik</h2>
+            <p>Hai Sobat, Selamat datang di KatiK</p>
+            <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        </div>
+
+        <p><button class="navbutton" onclick="toggleForm('luas')">Luas Persegi</button></p>
+        <p><button class="navbutton"onclick="toggleForm('keliling')">Keliling Persegi</button><p>
+<div class="container">
+        <div class="form-container" id="luasForm">
+            <h2>Luas Persegi</h2>
+            <img src="https://o-cdn-cas.sirclocdn.com/parenting/images/Persegi_finirezyhome.wordpress.co.width-500.format-webp.webp">
+            <p>Rumus Luas Persegi Yaitu</p>
+            <p class="rumus"> L = S x S</p>
+            <p> Dimana : </p>
+            <p>L = Luas</p>
+            <p>S = Sisi</p>
+            <input type="number" id="luasSisi" placeholder="Masukkan nilai sisi">
+            <button onclick="hitungLuas()">Hitung</button>
+            <button onclick="resetForm('luas')">Reset</button>
+            <p id="hasilLuas">Luas: </p>
+        </div>
+
+        <div class="form-container" id="kelilingForm">
+            <h2>Keliling Persegi</h2>
+            <img src="https://o-cdn-cas.sirclocdn.com/parenting/images/Persegi_finirezyhome.wordpress.co.width-500.format-webp.webp" sizes="20px">
+            <p>Rumus keliling Persegi Yaitu</p>
+            <p class="rumus"> K = 4 x S</p>
+            <p> Dimana : </p>
+            <p>K = keliling</p>
+            <p>S = Sisi</p>
+            <input type="number" id="kelilingSisi" placeholder="Masukkan nilai sisi">
+            <button onclick="hitungKeliling()">Hitung</button>
+            <button onclick="resetForm('keliling')">Reset</button>
+            <p id="hasilKeliling">Keliling: </p>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
